@@ -1,0 +1,47 @@
+section, aside{
+    float: left;
+    box-shadow: 0.5vw 0.5vh 0.5vw 0.5vw rgba(0,0,0,0.1);
+}
+
+section{
+    width: 60%;
+    margin-left: 5%;
+}
+
+/* form de contato */
+.bloco{
+    display: block;
+    padding-top: 1%;
+    font-weight: bold;
+}
+
+#nome, #email{
+    width: 100%;
+}
+
+form{
+    width: 90%;
+}
+
+form p{
+    text-align: left;
+}
+/* **************** */
+
+aside{
+    width: 20%;
+    min-height: 50vh;
+    margin-left: 2%;
+    padding: 2% 1%;
+}
+#lista-redes{
+    text-align: center;
+    list-style-type: none;
+    padding: 1%;
+}
+
+h2{text-align: center;}
+
+footer{ clear: both; }
+
+

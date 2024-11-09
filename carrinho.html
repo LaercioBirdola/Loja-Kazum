@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Loja Virtual</title>
+    <link rel="stylesheet" href="css/carrinho.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <!-- Nome do site no centro -->
+        <div class="site-name">KAZUM - Loja Virtual</div>
+        </div>
+    </header>
+
+    <div id="main">
+        <div id="header">
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="hardwares.html">Hardwares</a></li>
+                <li><a href="perifericos.html">Periféricos</a></li>
+                <li><a href="carrinho.html">Carrinho</a></li>
+                <li><a href="informacoes.html">Informações</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <main>
+        <section>
+
+            <header>
+                <!-- h2 = texto que vai aparecer dentro de section -->
+                <h2>MEU CARRINHO</h2>
+                <p><small>Mude a quantidade para 0 para remover o item do carrinho.</small></p>
+            </header>
+
+            <div class="card">
+                <img src="img/produto1.png" title="Foto da Placa de Vídeo RTX 3060" alt="Foto da Placa de Vídeo RTX 3060" class="card-img">
+                <h2 class="card-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Placa de Vídeo RTX 3060</h2>
+                <input type="number" min="0" value="1" class="qtde">
+                <p class="card-preco">R$ 1.699,00</p>
+            </div>
+            <div class="card">
+                <img src="img/produto7.png" title="Memória RAM Kingston Fury Beast" alt="Memória RAM Kingston Fury Beast" class="card-img">
+                <h2 class="card-title">Memória RAM Kingston</h2>
+                <input type="number" min="0" value="1" class="qtde">
+                <p class="card-preco">R$ 352,00</p>
+            </div>
+            <div class="card">
+                <img src="img/produto14.png" title="Headset Gamer Havit" alt="Headset Gamer Havit" class="card-img">
+                <h2 class="card-title">Headset Gamer Havit&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+                <input type="number" min="0" value="1" class="qtde">
+                <p class="card-preco">R$ 199,99</p>
+            </div>
+        </section>
+        <aside>
+            <h2>Resumo</h2>
+            <!-- "P" é um pequeno texto que aparecera no meio da tela e pode ser configurado no css -->
+            <p>Valor dos produtos: <b>R$ 2.250,99</b></p>
+            <p>Valor do frete para o CEP 13031-090: <b>R$ 14,90</b></p>
+            <hr>
+            <div id="valor-total">
+                <h3>Valor total</h3>
+                <p>R$ 2.265,89</p>
+            </div>
+            <button>Ir para o pagamento</button>
+            <a href="index.html" class="link-voltar">Voltar para a lista de produtos</a>
+        </aside>
+
+<footer>
+    <p>&copy; 2023 - KAZUM</p>
+</footer>
+</body>
+</html>

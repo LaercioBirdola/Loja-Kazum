@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Loja Virtual</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header>
+    <!-- Nome do site no centro -->
+    <div class="site-name">KAZUM - Loja Virtual</div>
+    
+    <!-- Barra de Pesquisa à esquerda com posição fixa -->
+    <div class="search-bar">
+        <form action="#" method="get">
+            <input type="text" id="pesquisa" name="pesquisa" placeholder="Pesquisar">
+            <button type="submit">Buscar</button>
+        </form>
+    </div>
+</header>
+    
+    <div id="main">
+        <div id="header">
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="hardwares.html">Hardwares</a></li>
+                <li><a href="perifericos.html">Periféricos</a></li>
+                <li><a href="carrinho.html">Carrinho</a></li>
+                <li><a href="informacoes.html">Informações</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Seção do Carousel -->
+    <div id="carouselExample" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+          <div class="carousel-item active">
+              <img src="img/banner01.png" class="d-block w-100" alt="Imagem 1">
+          </div>
+          <div class="carousel-item">
+              <img src="img/banner02.png" class="d-block w-100" alt="Imagem 2">
+          </div>
+          <div class="carousel-item">
+              <img src="img/banner03.png" class="d-block w-100" alt="Imagem 3">
+          </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Próximo</span>
+      </a>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <!--separação-->
+        <!-- Adicione mais produtos aqui -->
+
+        <main>
+          <!--separação-->
+          <section class="product">
+              <img src="img/produto1.png" alt="Produto 1">
+              <h2>Placa de Vídeo RTX 3060</h2>
+              <p>Placa de Vídeo RTX 3060 Ventus 2X MSI NVIDIA GeForce, 12GB GDDR6, DLSS, Ray Tracing.</p>
+              <span class="price">R$1,699,00</span>
+              <button onclick="redirecionarParaNovaPagina()">Adicionar ao Carrinho</button>
+          </section>        
+          <script>
+            function redirecionarParaNovaPagina() {
+                // Especifique o URL da nova página aqui
+                window.location.href = 'detalhe1.html';
+            }
+        </script>
+
+          <!--separação-->
+          <section class="product">
+              <img src="img/produto2.png" alt="Produto 2">
+              <h2>Placa de Vídeo RTX 4060</h2>
+              <p>Placa de Vídeo RTX 4060 EAGLE OC Gigabyte NVIDIA GeForce, 8GB GDRR6, DLSS, Ray Tracing.</p>
+              <span class="price">R$2.200,21</span>
+              <button>Adicionar ao Carrinho</button>
+          </section>
+          <!--separação-->
+          <section class="product">
+              <img src="img/produto3.png" alt="Produto 3">
+              <h2>AMD Ryzen 7 5700G</h2>
+              <p>Processador AMD Ryzen 7 5700G, 3.8GHz (4.6GHz Max Turbo), Cache 20MB, 8 Núcleos, 16 Threads.</p>
+              <span class="price">R$1.322,00</span>
+              <button>Adicionar ao Carrinho</button>
+          </section>
+          <!--separação-->
+          <section class="product">
+              <img src="img/produto4.png" alt="Produto 4">
+              <h2>Intel Core i7-10700K</h2>
+              <p>Processador Intel Core i7-10700K, 3.8GHz (5.1GHz Max Turbo), Cache 16MB, LGA 1200 - BX8070110700K.</p>
+              <span class="price">R$1.890,90</span>
+              <button>Adicionar ao Carrinho</button>
+          </section>
+          <!--separação-->
+          <section class="product">
+              <img src="img/produto5.png" alt="Produto 5">
+              <h2>Placa Mãe B550M-Plus</h2>
+              <p>Placa Mãe Asus TUF Gaming B550M-Plus, Chipset B550, AMD AM4, mATX, DDR4, 90MB14A0-C1BAY0</p>
+              <span class="price">R$929,00</span>
+              <button>Adicionar ao Carrinho</button>
+          </section>
+          <!--separação-->
+          <section class="product">
+              <img src="img/produto6.png" alt="Produto 6">
+              <h2>Placa Mãe B450M</h2>
+              <p>Placa Mãe Gigabyte B450M DS3H V2, AMD B450, Chipset B450, mATX, DDR4, (rev. 1.0).</p>
+              <span class="price">R$635,90</span>
+              <button>Adicionar ao Carrinho</button>
+          </section>
+          <!--separação-->
+          <section class="product">
+              <img src="img/produto7.png" alt="Produto 7">
+              <h2>Memória RAM 16GB</h2>
+              <p>Memória RAM Kingston Fury Beast, DDR4, 16GB 3200mhz RGB, Preto - kf432c16bb2a/16.</p>
+              <span class="price">R$352,00</span>
+              <button>Adicionar ao Carrinho</button>
+          </section>
+          <!--separação-->
+          <section class="product">
+              <img src="img/produto8.png" alt="Produto 8">
+              <h2>Memória RAM 16GB</h2>
+              <p>Memória XPG Lancer, RGB, 16GB, 5200MHz, DDR5, CL38, Preto - AX5U5200C3816G-CLARBK.</p>
+              <span class="price">R$599,90</span>
+              <button>Adicionar ao Carrinho</button>
+          </section>
+          <!--separação-->
+          <section class="product">
+              <img src="img/produto9.png" alt="Produto 9">
+              <h2>HD Seagate 4TB</h2>
+              <p>HD Seagate 4TB BarraCuda, 3.5', SATA - ST4000DM004.</p>
+              <span class="price">R$552,90</span>
+              <button>Adicionar ao Carrinho</button>
+          </section>
+          <!--separação-->
+          <section class="product">
+              <img src="img/produto10.png" alt="Produto 10">
+              <h2>SSD Kingston 1TB</h2>
+              <p>SSD Externo Portátil Kingston 1TB, USB 3.2, Leitura: 1.050MB/s e Gravação: 1.050MB/s - SXS1000/1000G.</p>
+              <span class="price">R$529,90</span>
+              <button>Adicionar ao Carrinho</button>
+          </section>
+          <!--separação-->
+          <section class="product">
+              <img src="img/produto11.png" alt="Produto 11">
+              <h2>Fonte 500W</h2>
+              <p>Fonte MSI MAG A500DN, ATX, 500W, 80 PLUS, PFC Ativo, Entrada Bivolt, Preto - 306-7ZP6A22-809.</p>
+              <span class="price">R$311,90</span>
+              <button>Adicionar ao Carrinho</button>
+          </section>
+          <!--separação-->
+          <section class="product">
+              <img src="img/produto12.png" alt="Produto 12">
+              <h2>Fonte 650W</h2>
+              <p>Fonte MSI MAG A650BN, ATX, 650W, 80 PLUS Bronze, PFC Ativo, Entrada Bivolt, Preto - 306-7ZP2B22-CE0.</p>
+              <span class="price">R$341,00</span>
+              <button>Adicionar ao Carrinho</button>
+          </section>
+          <section class="product">
+            <img src="img/produto13.png" alt="Produto 13">
+            <h2>Headset Redragon Zeus X</h2>
+            <p>Headset Gamer Redragon Zeus X, Chroma Mk.II, RGB, Surround 7.1, USB, Drivers 53MM, Preto/Vermelho.</p>
+            <span class="price">R$294,00</span>
+            <button>Adicionar ao Carrinho</button>
+        </section>
+        <!--separação-->
+        <section class="product">
+            <img src="img/produto14.png" alt="Produto 14">
+            <h2>Headset Gamer Havit</h2>
+            <p>Headset Gamer Havit, Drivers 53mm, Microfone Plugável, P2, PC, PS4, XBOX ONE, Preto - HV-H2002D.</p>
+            <span class="price">R$199,99</span>
+            <button>Adicionar ao Carrinho</button>
+        </section>
+        <!--separação-->
+        <section class="product">
+            <img src="img/produto15.png" alt="Produto 15">
+            <h2>Gabinete Rise Glass</h2>
+            <p>Gabinete Gamer Rise Mode Glass 06x, Mid Tower, ATX, Lateral e Frontal em Vidro Temperado.</p>
+            <span class="price">R$352,00</span>
+            <button>Adicionar ao Carrinho</button>
+        </section>
+        <!--separação-->
+        <section class="product">
+            <img src="img/produto16.png" alt="Produto 16">
+            <h2>Gabinete Rise Galaxy</h2>
+            <p>Gabinete Gamer Rise Mode Galaxy Glass, Mid Tower, Lateral e Frontal em Vidro Temperado, Preto.</p>
+            <span class="price">R$447,90</span>
+            <button>Adicionar ao Carrinho</button>
+        </section>
+        <!--separação-->
+        <section class="product">
+            <img src="img/produto17.png" alt="Produto 17">
+            <h2>Mouse Kater Elite</h2>
+            <p>Mouse Gamer Corsair Kater Elite, RGB, 26000DPI, 6 Botões, Wireless, Preto - CH-931C111-NA.</p>
+            <span class="price">R$399,00</span>
+            <button>Adicionar ao Carrinho</button>
+        </section>
+        <!--separação-->
+        <section class="product">
+            <img src="img/produto18.png" alt="Produto 18">
+            <h2>Mouse Gamer Redragon</h2>
+            <p>Mouse Gamer Redragon Cobra, Chroma RGB, 12400DPI, 7 Botões, Preto - M711 V2.</p>
+            <span class="price">R$115,90</span>
+            <button>Adicionar ao Carrinho</button>
+        </section>
+        <!--separação-->
+        <section class="product">
+            <img src="img/produto19.png" alt="Produto 19">
+            <h2>Teclado HyperX Alloy</h2>
+            <p>Teclado Mecânico Gamer HyperX Alloy MKW100, RGB, Switch Red, Full Size, US, Preto - 4P5E1AA#ABA.</p>
+            <span class="price">R$317,00</span>
+            <button>Adicionar ao Carrinho</button>
+        </section>
+        <!--separação-->
+        <section class="product">
+            <img src="img/produto20.png" alt="Produto 20">
+            <h2>Teclado Husky Gaming</h2>
+            <p>Teclado Mecânico Gamer Husky Gaming Blizzard, 60%, RGB, Switch Gateron Red, ABNT2, Preto - HGMO000.</p>
+            <span class="price">R$305,90</span>
+            <button>Adicionar ao Carrinho</button>
+        </section>
+        <!--separação-->
+        <section class="product">
+            <img src="img/produto21.png" alt="Produto 21">
+            <h2>Controle PS5</h2>
+            <p>Controle Sony DualSense PS5, Sem Fio, Branco - 3005767.</p>
+            <span class="price">R$314,90</span>
+            <button>Adicionar ao Carrinho</button>
+        </section>
+        <!--separação-->
+        <section class="product">
+            <img src="img/produto22.png" alt="Produto 22">
+            <h2>Controle XBOX</h2>
+            <p>Controle Xbox Series X, Sem Fio, Carbon Black, QAT-00007.</p>
+            <span class="price">R$314,90</span>
+            <button>Adicionar ao Carrinho</button>
+        </section>
+        <!--separação-->
+        <section class="product">
+            <img src="img/produto23.png" alt="Produto 23">
+            <h2>WebCam Logitech C920</h2>
+            <p>WebCam Logitech C920 Pro Full HD para Chamadas e Gravações em Video Widescreen 1080p - 960-000764.</p>
+            <span class="price">R$415,90</span>
+            <button>Adicionar ao Carrinho</button>
+        </section>
+        <!--separação-->
+        <section class="product">
+            <img src="img/produto24.png" alt="Produto 24">
+            <h2>WebCam Logitech C270</h2>
+            <p>Webcam HD Logitech C270, 720p, 30 FPS, Microfone Integrado, USB 2.0 - 960-000694.</p>
+            <span class="price">R$235,00</span>
+            <button>Adicionar ao Carrinho</button>
+        </section>
+        <!--separação-->
+
+
+
+    </main>
+    <footer>
+        <p>&copy; 2023 Kazum</p>
+    </footer>
+
+</body>
+</html>

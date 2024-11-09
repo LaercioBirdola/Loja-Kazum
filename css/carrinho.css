@@ -1,0 +1,162 @@
+
+
+main{
+    width: 100%; /* tamanho de main referente a tela */
+    display: grid;
+    /*grid-template-rows: 10vh auto 10vh !important; /* header section/aside footer */
+    grid-template-columns: auto;
+    grid-template-areas: "cabecalho" "secao" "rodape";
+    min-height: 100vh;
+    position: relative;
+}
+
+section{ /* onde fica os divs(quadrados) na tela e podemos modificado-los */
+    width: 90%;
+    grid-area: secao;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0 auto; /* centraliza main na tela */   
+    padding-bottom: 4rem;
+}
+
+.card{ /*  tamanho de cada div */
+    width: 21%;
+    padding: 1%;
+    margin: 1%;
+    height: 310px;
+    box-shadow: .1em .1em .1em .1em rgba(0,0,0,0.1);
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-img{ /* tamanho da div*/
+    width: 100%;
+    height: 300px;
+}
+
+.card-title{
+    font-size: medium;
+}
+
+.card-preco{ /*modificar a cor da fonte da div */
+    font-weight: bold;
+    font-size: large;
+    color: rgb(68, 207, 22);
+}
+
+.btn, button{ /*onde podemos clicar no botão que esta dentro da div */
+    background-color: rgb(68, 207, 22);
+    border: none;
+    width: auto;
+    font-size: large;
+    padding: 2%;
+    color: #F5F5F5;
+    font-weight: bold;
+    border-radius: .2em;
+    display: block;
+}
+
+.btn:hover{
+    background-color: rgb(38, 118, 12);
+}
+
+footer{ /* aqui é onde podemos configurar as cores e tamanho do rodapé do site */
+    width: 100%;
+    grid-area: rodape;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: large;
+    font-weight: bold;
+    bottom: 0 !important;
+    position: absolute !important;
+    height: 3rem;
+}
+
+@media screen and (max-width: 800px){
+    /*main{
+        grid-template-rows: auto auto auto !important;
+    }
+    */
+    .card{
+        width: 92%;
+    }
+}
+
+
+
+
+/* SEPARAÇÃOOOOOOOOOOOOO*/
+
+
+
+
+section header{
+    width: 100%;
+    text-align: center !important;
+    color: #ffffff;
+}
+
+.card{ /* onde ficam as divs modificadas dentro do carrinho*/
+    margin-top: 0 !important;
+    width: 100% !important;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-img{
+    width: 8%;
+    height: 100px;
+}
+input.qtde{ /* botão para o pagamento*/
+    width: 5%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+aside{
+    grid-area: barra-lateral;
+    box-shadow: .1em .1em .1em .1em rgba(0,0,0,0.1);
+    width: 86%;
+    height: auto !important;
+    padding: 0 2%;
+    padding-bottom: 4rem;
+}
+
+header h2{
+    text-align: center;
+}
+
+aside h2{  color: #f5a208; }
+aside p{ text-align: left;}
+aside button{ 
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#valor-total{ /* cor do valor total*/
+    padding: 1%;
+    background-color: rgb(229, 255, 241);
+    color: rgb(31, 144, 80);
+}
+
+#valor-total > * { /* texto onde mostra o valor total do carrinho*/
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.link-voltar{ /* link para voltar a pagina anterior*/
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+

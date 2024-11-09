@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Loja Virtual</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/detalhe.css">
+</head>
+<body>
+
+    <header>
+        <!-- Nome do site no centro -->
+        <div class="site-name">KAZUM - Loja Virtual</div>
+        
+        <!-- Barra de Pesquisa à esquerda com posição fixa -->
+        <div class="search-bar">
+            <form action="#" method="get">
+                <input type="text" id="pesquisa" name="pesquisa" placeholder="Pesquisar">
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+    </header>
+
+    <div id="main">
+        <div id="header">
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="hardwares.html">Hardwares</a></li>
+                <li><a href="perifericos.html">Periféricos</a></li>
+                <li><a href="carrinho.html">Carrinho</a></li>
+                <li><a href="informacoes.html">Informações</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <section>
+            <h2>Placa de Vídeo RTX 3060 Ventus 2X MSI NVIDIA GeForce, 12GB GDDR6, DLSS, Ray Tracing - RTX 3060 Ventus 2X 12G OC</h2>
+        <div id="detalhe-produto">
+            <img src="img/produto1.png" title="Foto da Placa de Vídeo RTX 3060" alt="Foto da Placa de Vídeo RTX 3060" class="produto-img">
+            <div class="descricao-produto">
+                <h3>DESCRIÇÃO DO PRODUTO</h3>
+                <p>Jogue os jogos mais recentes usando o poder da Ampere — a arquitetura RTX de 2ª geração da NVIDIA. Obtenha um desempenho incrível com Ray Tracing Cores e Tensor Cores aprimorados, novos multiprocessadores de streaming e memória G6 de alta velocidade.</p>
+                <p>Design Focado em Desempenho 
+                    Mantendo o essencial para realizar qualquer tarefa em mãos. Balançar um arranjo de ventilador duplo confiável em um design industrial rígido permite que esta placa gráfica de aparência nítida se encaixe em qualquer construção.</p>
+            </div>
+        </div>
+        <div id="compra-produto">
+            <label for="cep">Calcular o frete e prazo de entrega:</label>
+            <input type="text" id="cep" placeholder="00000-000">
+            <p class="card-preco">R$ 1.699,00</p>
+            <label for="qtde">Quantidade:</label>
+            <input type="number" id="qtde" min="1" value="1">
+            <a href="carrinho.html" class="btn">Comprar</a>
+            <a href="index.html" class="link-voltar">Voltar para a lista de produtos</a>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2023 - KAZUM</p>
+    </footer>
+</body>
+</html>

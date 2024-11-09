@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Loja Virtual</title>
+    <link rel="stylesheet" href="css/contato.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <!-- Nome do site no centro -->
+        <div class="site-name">KAZUM - Loja Virtual</div>
+    </header>
+
+    <div id="main">
+        <div id="header">
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="hardwares.html">Hardwares</a></li>
+                <li><a href="perifericos.html">Periféricos</a></li>
+                <li><a href="carrinho.html">Carrinho</a></li>
+                <li><a href="informacoes.html">Informações</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <main>
+        <section>
+            <!-- Cabeçalho da seção -->
+            <header>
+                <h2>Contato</h2>
+            </header>
+            <form method="post" autocomplete="off">
+                <label for="nome" class="bloco">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email" class="bloco">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="perfil" class="bloco">Perfil</label>
+                <select id="perfil" name="aluno" required> 
+                    <option value=""select> -- Escolha --</option>
+                    <option value="cliente">Cliente</option>
+                    <option value="funcionario">Funcionario</option>
+                    <option value="patrocinador">Patrocinador</option>
+                    <option value="parceria">Parceria</option>
+                </select>
+
+                <label class="bloco">Deseja receber E-mails promocionais?:</label>
+                <input type="radio" id="sim" name="trabalha" value="Sim" required>
+                <label for="sim">Sim</label>
+                <input type="radio" id="nao" name="trabalha" value="Não">
+                <label for="não">Não</label>
+
+                <label class="bloco">Deseja receber SMS?:</label>
+                <input for="radio" id="sim" name="trabalha" value="+55" required>
+                <label for="sim">Sim</label>
+                <input type="radio" id="nao" name="trabalha" value="Não">
+                <label for="não">Não</label>
+
+                <label for="mensagens" class="bloco">Mensagens:</label>
+                <textarea id="mensagens" name="mensagens" rows="10" cols="80" placeholder="Digite uma mensagem aqui..." required></textarea>
+                <button type="submit" id="botao">Enviar</button>
+                <button type="reset" id="limpar">Limpar</button>
+            </form>
+
+        </section>
+        <aside>
+            <h2>Redes Sociais</h2>
+            <p>
+                <ul id="lista-redes">
+                    <li><a href="https://facebook.com"><img src="img/facebook.png" alt="Icone para visitar o perfil
+                        facebook de Laércio"></a></li>
+                    <li><a href="https://instagram.com"></a><img src="img/instagram.png" alt="Icone para visitar o perfil
+                        instagram de Laércio"></a></li>
+                    <li><a href="https://twitter.com"></a><img src="img/twitter.png" alt="Icone para visitar o perfil
+                        twitter de Laércio"></a></li>
+                        <li><a href="https://youtube.com"></a><img src="img/youtube.png" alt="Icone para visitar o perfil
+                            youtube de Laércio"></a></li>
+                            <li><a href="https://discord.com"></a><img src="img/discord.png" alt="Icone para visitar o perfil
+                                discord de Laércio"></a></li>
+                </ul>
+            </p>
+        </aside>
+    </main>
+    <!-- Rodapé do corpo da página -->
+    <footer>
+        <p>&copy; 2023 - KAZUM</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,130 @@
+body{  /* corpo inteiro do site, ou seja, tudo que engloba a parte do meio do site */
+    padding: 0;
+    margin: 0;
+    text-align: center;
+
+}
+
+
+section{ /* onde fica os divs(quadrados) na tela e podemos modificado-los */
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto; /* centraliza main na tela */   
+    padding-bottom: 4rem;
+}
+
+.card{ /*  tamanho de cada div */
+    width: 21%;
+    padding: 1%;
+    margin: 1%;
+    height: 310px;
+    box-shadow: .1em .1em .1em .1em rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.card-img{ /* tamanho da div*/
+    width: 60%;
+    height: 180px;
+}
+
+.card-title{
+    font-size: medium;
+}
+
+.card-preco{ /*modificar a cor da fonte da div */
+    font-weight: bold;
+    font-size: large;
+    color: #2cab10;
+}
+
+.btn{ /*onde podemos clicar no botão que esta dentro da div */
+    background-color: rgb(68, 207, 22);
+    border: none;
+    width: auto;
+    font-size: large;
+    padding: 2%;
+    color: #F5F5F5;
+    font-weight: bold;
+    border-radius: .2em;
+    text-decoration: none;
+    display: block;
+}
+
+.btn:hover{
+    background-color: rgb(38, 118, 12);
+}
+
+
+
+/* SEPARAÇÃOOOOOOOOOOOOOOOOOOOOOOOO */
+
+section header{
+    width: 100%;
+    text-align: center !important;
+}
+#detalhe-produto{ /* tamanho do detalhe do produto*/
+    width: 60%;
+}
+
+.produto-img{
+    width: auto;
+    height: auto;
+}
+
+.descricao-produto{ /* onde vai ficar o texto do produto */
+    text-align: left;
+}
+
+#compra-produto{
+    width: 40%;
+    padding-top: 10vh;
+}
+
+#compra-produto p{
+    font-size: 2rem;
+}
+
+#compra-produto label{
+    font-size: 1.2em;
+}
+
+#cep, #qtde{ /* tamanho da caixa de texto do cep no site */
+    font-size: 1.3em;
+    text-align: center;
+}
+
+#qtde{
+    width: 10%;
+    margin-bottom: 20px;
+}
+
+.link-voltar{ /*onde ficaria o botão para voltar a pagina anterior */
+    display: block;
+    text-decoration: none;
+    margin-top: 10px;
+    color: #000000;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 800px){
+
+    #detalhe-produto{ 
+        width: 100%;
+    }
+    .fotos-produto img{
+        width: 30%;
+        height: 120px;
+    }
+
+    #compra-produto{
+        width: 100%;
+    }
+}
+
+.produto-img {
+    max-width: 50%;
+    height: auto;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
